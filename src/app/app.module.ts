@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsPageComponent } from './components/news-page/news-page.component';
 import { CardNewsComponent } from './components/card-news/card-news.component';
+import { CategoryCardsComponent } from './components/category-cards/category-cards.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CardNewsComponent } from './components/card-news/card-news.component';
     HeaderComponent,
     FooterComponent,
     NewsPageComponent,
-    CardNewsComponent
+    CardNewsComponent,
+    CategoryCardsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 
 <!-- <div href="#" class="flex content-center max-w-full p-6 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"> -->
-<div href="#" class="grid grid-cols-2 gap-10 max-w-full p-6 bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+<div href="#" class="grid grid-cols-2 gap-10 max-w-full p-6 bg-white border my-5 border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
   <div class="flex flex-col gap-8">
     <div class="flex flex-col gap-4">
       <p class="uppercase">Tecnologia</p>
@@ -17,7 +17,20 @@
 
 <section>
   <h3>All posts</h3>
-  <div class="card-container">
-    
+  <div class="card-container flex flex-col gap-y-4 mt-5">
+    <app-card-news></app-card-news>
+    <app-card-news></app-card-news>
+    <app-card-news></app-card-news>
   </div>
+  <div class="direction-buttons flex justify-center gap-5 my-5">
+    <span class="text-lg font-semibold">Prev</span>
+    <span class="text-lg font-semibold">Next</span>
+  </div>
+</section>
+
+<section class="flex gap-x-4 mb-10">
+  <app-category-cards></app-category-cards>
+  <app-category-cards></app-category-cards>
+  <app-category-cards></app-category-cards>
+  <app-category-cards></app-category-cards>
 </section>
