@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsPageComponent } from './components/news-page/news-page.component';
-import { CardNewsComponent } from './components/card-news/card-news.component';
+import { HorizontalCardNewsComponent } from './components/horizontal-card-news/horizontal-card-news.component';
 import { CategoryCardsComponent } from './components/category-cards/category-cards.component';
+import { ArticlePageComponent } from './components/article-page/article-page.component';
+import { VerticalArticleCardComponent } from './components/vertical-article-card/vertical-article-card.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +17,10 @@ import { CategoryCardsComponent } from './components/category-cards/category-car
     HeaderComponent,
     FooterComponent,
     NewsPageComponent,
-    CardNewsComponent,
-    CategoryCardsComponent
+    HorizontalCardNewsComponent,
+    CategoryCardsComponent,
+    ArticlePageComponent,
+    VerticalArticleCardComponent
   ],
   imports: [
     BrowserModule,
