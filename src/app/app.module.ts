@@ -10,6 +10,7 @@ import { HorizontalCardNewsComponent } from './components/horizontal-card-news/h
 import { CategoryCardsComponent } from './components/category-cards/category-cards.component';
 import { ArticlePageComponent } from './components/article-page/article-page.component';
 import { VerticalArticleCardComponent } from './components/vertical-article-card/vertical-article-card.component';
+import { AboutUsPageComponent } from './components/about-us-page/about-us-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { VerticalArticleCardComponent } from './components/vertical-article-card
     HorizontalCardNewsComponent,
     CategoryCardsComponent,
     ArticlePageComponent,
-    VerticalArticleCardComponent
+    VerticalArticleCardComponent,
+    AboutUsPageComponent
   ],
   imports: [
     BrowserModule,
