@@ -12,6 +12,7 @@ import { ArticlePageComponent } from './components/article-page/article-page.com
 import { VerticalArticleCardComponent } from './components/vertical-article-card/vertical-article-card.component';
 import { AboutUsPageComponent } from './components/about-us-page/about-us-page.component';
 import { ActivityCardComponent } from './components/about-us-page/components/activity-card/activity-card.component';
+import { ColaboratorCardComponent } from './components/colaborator-card/colaborator-card.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ActivityCardComponent } from './components/about-us-page/components/act
     ArticlePageComponent,
     VerticalArticleCardComponent,
     AboutUsPageComponent,
-    ActivityCardComponent
+    ActivityCardComponent,
+    ColaboratorCardComponent
   ],
   imports: [
     BrowserModule,
