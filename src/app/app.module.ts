@@ -14,6 +14,7 @@ import { AboutUsPageComponent } from './components/about-us-page/about-us-page.c
 import { ActivityCardComponent } from './components/about-us-page/components/activity-card/activity-card.component';
 import { ColaboratorCardComponent } from './components/colaborator-card/colaborator-card.component';
 import { ActivityInfoComponent } from './components/about-us-page/components/activity-info/activity-info.component';
+import { GaleriaPageComponent } from './components/galeria-page/galeria-page.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ActivityInfoComponent } from './components/about-us-page/components/act
     AboutUsPageComponent,
     ActivityCardComponent,
     ColaboratorCardComponent,
-    ActivityInfoComponent
+    ActivityInfoComponent,
+    GaleriaPageComponent
   ],
   imports: [
     BrowserModule,
