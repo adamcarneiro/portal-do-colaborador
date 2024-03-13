@@ -1,18 +1,25 @@
+<a routerLink="" (click)="goBack()" >voltar</a>
 <div class="w-full mt-10">
   <div class="publisher-info-container flex gap-3 my-4 mx-48">
-    <img class="w-10 h-10 rounded-full" src="../../../assets/images/colaboradores/ada.jpg" alt="Rounded avatar">
+    <img class="w-10 h-10 rounded-full" src="assets/images/colaboradores/ada.jpg" alt="Rounded avatar">
     <div class="puublisher-info">
-      <p class="text-fuchsia-900 text-sm">Adamastor Chimalange</p>
-      <p class="text-xs">Postado em 27/02/2024</p>
+      <!-- <p class="text-fuchsia-900 text-sm">Adamastor Chimalange</p> -->
+      <p class="text-fuchsia-900 text-sm">{{post.author}}</p>
+      <!-- <p class="text-xs">Postado em 27/02/2024</p> -->
+      <p class="text-xs">Postado em {{post.postedDate}}</p>
     </div>
   </div>
-  <h3 class="text-4xl font-bold my-5 mx-48">Step-by-step guide to choosing great font pairs</h3>
-  <p class="text-lg my-5 mx-48">Categoria</p>
-  <img class="" src="../../../assets/images/under/futebol.jpg" alt="article foto">
+  <!-- <h3 class="text-4xl font-bold my-5 mx-48">Step-by-step guide to choosing great font pairs</h3> -->
+  <h3 class="text-4xl font-bold my-5 mx-48">{{post.title}}</h3>
+  <!-- <p class="text-lg my-5 mx-48">Categoria</p> -->
+  <p class="text-lg my-5 mx-48">{{post.category}}</p>
+  <!-- <img class="" src="{{post.photo}}" alt="article foto"> -->
+
+  <div class="bg-no-repeat bg-center bg-cover h-96 max-h-96 w-full mt-4" style="background-image: url({{post.photo}});"></div>
 
   <div class="article-body-content mx-48 my-8">
 
-    <p class="mb-3 text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start">Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.</p>
+    <!-- <p class="mb-3 text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start">Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.</p>
     <p class="text-gray-500 dark:text-gray-400">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease, with a complete audit trail for every change.</p>
 
     <p class="text-gray-500 dark:text-gray-400">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease, with a complete audit trail for every change.</p>
@@ -20,8 +27,11 @@
     <p class="text-gray-500 dark:text-gray-400">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease, with a complete audit trail for every change.</p>
     <p class="mb-3 text-gray-500 dark:text-gray-400">Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.</p>
     <p class="text-gray-500 dark:text-gray-400">Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease, with a complete audit trail for every change.</p>
-    <p class="mb-3 text-gray-500 dark:text-gray-400">Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.</p>
-
+    <p class="mb-3 text-gray-500 dark:text-gray-400">Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.</p> -->
+    <p class="mb-3 text-gray-500 dark:text-gray-400 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 dark:first-letter:text-gray-100 first-letter:me-3 first-letter:float-start">{{post.content}}</p>
+    <p class="mb-3 text-gray-500 dark:text-gray-400">As t-shirts da seleção nacional não são apenas vestuário; são símbolos tangíveis do apoio e solidariedade entre colegas. Ao usarem-nas, os colaboradores manifestam o seu compromisso não apenas com a empresa, mas também com o país, representando os valores de trabalho em equipe, dedicação e determinação que são fundamentais tanto no mundo corporativo quanto nos campos desportivos.</p>
+    <p class="mb-3 text-gray-500 dark:text-gray-400"> Além disso, esta ação da Bravantic não só promove a coesão interna, mas também cria um ambiente de trabalho mais descontraído e motivador. As conversas sobre os próximos jogos, as brincadeiras amigáveis entre colegas de diferentes departamentos e o sentimento de estar parte de algo maior do que apenas o trabalho diário, tudo isto contribui para um clima organizacional mais positivo e colaborativo.</p>
+    <p class="text-gray-500 dark:text-gray-400"> Ao presentear os colaboradores com t-shirts da seleção nacional, a Bravantic reforça o seu compromisso com o bem-estar e a felicidade dos seus funcionários, reconhecendo não apenas as suas contribuições profissionais, mas também a importância de cultivar um ambiente de trabalho onde todos se sintam valorizados e integrados.</p>
   </div>
 
   <section class="bg-neutral-70">

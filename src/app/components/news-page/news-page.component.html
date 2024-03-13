@@ -3,25 +3,38 @@
 <div href="#" class="grid grid-cols-2 gap-10 max-w-full p-6 bg-white border my-5 border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
   <div class="flex flex-col gap-8">
     <div class="flex flex-col gap-4">
-      <p class="uppercase">Tecnologia</p>
-      <h5 class="mb-2 mt-3 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-      <p class="">By <span>Adamastor Chimalange | </span>16 Fevereiro 2022</p>
-      <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+      <!-- <p class="uppercase">Tecnologia</p> -->
+      <p class="uppercase">{{posts[0].category}}</p>
+      <!-- <h5 class="mb-2 mt-3 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5> -->
+      <h5 class="mb-2 mt-3 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{posts[0].title}}</h5>
+      <!-- <p class="text-xs">By <span class="text-brave-purble font-bold text-xs">Adamastor Chimalange {{data}} | </span>16 Fevereiro 2022</p> -->
+      <p class="text-xs">By <span class="text-brave-purble font-bold text-xs">{{posts[0].author}} | </span>{{posts[0].postedDate}}</p>
+      <!-- <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p> -->
+      <p class="font-normal text-gray-700 dark:text-gray-400">{{posts[0].content}}</p>
     </div>
     <div>
-      <button routerLink="/article" type="button" class="w-48 max-h-12 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Read More</button>
+      <button routerLink="/article/{{posts[0].id}}" type="button" class="w-48 max-h-12 text-white bg-brave-purble hover:bg-brave-purble focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Read More</button>
     </div>
   </div>
-  <img class="h-auto max-w-lg rounded-lg" src="../../../assets/images/under/post_1.jpg" alt="image description">
+  <!-- <img class="h-auto max-w-lg rounded-lg" src="../../../assets/images/under/post_1.jpg" alt="image description"> -->
+  <img class="h-auto max-w-lg rounded-lg" src="{{posts[0].photo}}" alt="image description">
 </div>
 
 <section>
   <h3>All posts</h3>
-  <div class="card-container flex flex-col gap-y-4 mt-5">
-    <app-horizontal-card-news></app-horizontal-card-news>
-    <app-horizontal-card-news></app-horizontal-card-news>
-    <app-horizontal-card-news></app-horizontal-card-news>
-  </div>
+  <!-- </div> -->
+  <ul class="grid grid-cols-2 gap-y-4 mt-5">
+    <!-- <li *ngFor="let item of posts">{{item.author}}</li> -->
+
+    <a routerLink="/article/{{item.id}}" *ngFor="let item of posts_">
+      <app-horizontal-card-news
+        [title]="item.title"
+        [photo]="item.photo"
+        [category]="item.category"
+        [content]="item.content"
+      ></app-horizontal-card-news>
+    </a>
+  </ul>
   <div class="direction-buttons flex justify-center gap-5 my-5">
     <span class="text-lg font-semibold">Prev</span>
     <span class="text-lg font-semibold">Next</span>
