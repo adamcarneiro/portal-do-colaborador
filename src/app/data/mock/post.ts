@@ -5,7 +5,10 @@ export const POSTS: PostInterface[] = [
     id:0,
     title: 'Bravantic Presenteia Com T-shirt da Seleção Nacional os Colaboradores',
     photo: 'assets/images/under/two-women-in-front-of-dry-erase-board-1181533.jpg',
-    content: 'Em homenagem o bom desempenho da nossa seleção no CAN 2023 que decorreu na Republica da Costa do Marfim, a Bravantic Angola presenteou com camisolosas da nossa Seleção os colaboradores: Paulo Oliveira, Júlia Jorge, e Miguel',
+    content: 'É com grande entusiasmo que anunciamos uma iniciativa especial aqui na Bravantic, uma celebração de diversidade, inclusão e orgulho nacional. Como parte de nosso compromisso contínuo em valorizar a riqueza de culturas que compõem nossa equipe, estamos emocionados em presentear cada um de vocês com uma camisa da seleção nacional de Angola.'+
+    +'\nEsta ação não apenas reconhece a diversidade presente em nosso ambiente de trabalho, mas também celebra a herança e o orgulho angolanos entre nossos colegas. Queremos que cada colaborador se sinta verdadeiramente parte de uma equipe que valoriza e respeita suas origens.'+
+    +'\nA seleção nacional de Angola é mais do que um time de futebol; é um símbolo de união, força e identidade nacional. Ao usar essas camisas, esperamos que vocês se sintam conectados não apenas ao esporte, mas também à rica história e cultura de Angola.'+
+    +'\nAgradecemos a cada um de vocês por fazerem parte desta jornada conosco e por contribuírem para um ambiente de trabalho inclusivo e acolhedor. Que estas camisas sirvam como um lembrete do nosso compromisso com a diversidade e o respeito mútuo.',
     author:'Adamastor Chimalange',
     category:'Informação',
     postedDate:'20/02/24'
