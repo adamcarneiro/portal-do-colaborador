@@ -16,6 +16,9 @@ import { ColaboratorCardComponent } from './components/colaborator-card/colabora
 import { ActivityInfoComponent } from './components/about-us-page/components/activity-info/activity-info.component';
 import { GaleriaPageComponent } from './components/galeria-page/galeria-page.component';
 import { ActivitiesPageComponent } from './components/activities-page/activities-page.component';
+import { AdminDashboardPageComponent } from './components/admin-dashboard-page/admin-dashboard-page.component';
+import { UserAdminPageComponent } from './components/user-admin-page/user-admin-page.component';
+import { PostAdminPageComponent } from './components/post-admin-page/post-admin-page.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { ActivitiesPageComponent } from './components/activities-page/activities
     ColaboratorCardComponent,
     ActivityInfoComponent,
     GaleriaPageComponent,
-    ActivitiesPageComponent
+    ActivitiesPageComponent,
+    AdminDashboardPageComponent,
+    UserAdminPageComponent,
+    PostAdminPageComponent,
   ],
   imports: [
     BrowserModule,
