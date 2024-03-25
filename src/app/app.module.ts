@@ -19,6 +19,7 @@ import { ActivitiesPageComponent } from './components/activities-page/activities
 import { AdminDashboardPageComponent } from './components/admin-dashboard-page/admin-dashboard-page.component';
 import { UserAdminPageComponent } from './components/user-admin-page/user-admin-page.component';
 import { PostAdminPageComponent } from './components/post-admin-page/post-admin-page.component';
+import { CreatePostPageComponent } from './components/create-post-page/create-post-page.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { PostAdminPageComponent } from './components/post-admin-page/post-admin-
     AdminDashboardPageComponent,
     UserAdminPageComponent,
     PostAdminPageComponent,
+    CreatePostPageComponent,
   ],
   imports: [
     BrowserModule,
