@@ -19,7 +19,8 @@ import { ActivitiesPageComponent } from './components/activities-page/activities
 import { AdminDashboardPageComponent } from './components/admin-dashboard-page/admin-dashboard-page.component';
 import { UserAdminPageComponent } from './components/user-admin-page/user-admin-page.component';
 import { PostAdminPageComponent } from './components/post-admin-page/post-admin-page.component';
-import { CreatePostPageComponent } from './components/create-post-page/create-post-page.component';
+
+import { QuillModule } from 'ngx-quill'
 
 @NgModule({
   declarations: [
@@ -40,11 +41,11 @@ import { CreatePostPageComponent } from './components/create-post-page/create-po
     AdminDashboardPageComponent,
     UserAdminPageComponent,
     PostAdminPageComponent,
-    CreatePostPageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    QuillModule
   ],
   providers: [],
   bootstrap: [AppComponent]
